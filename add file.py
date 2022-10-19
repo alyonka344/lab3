@@ -1,3 +1,19 @@
+def circle(r):
+    s = int(3.14 * r**2)
+    l = int(2 * 3.14 * r)
+    return (s, l)
+
+def triangle(a, b, c):
+    l = a + b + c
+    p = l // 2
+    s = int((p * (p - a) * (p - b) * (p - c))**0.5)
+    return (s, l)
+
+def rectangle(a, b):
+    l = (a + b) * 2
+    s = a * b
+    return (s, l)
+
 function = input()
 if function == 'circle':
     print('Введите радиус окружности: ')
